@@ -17,14 +17,14 @@ showPrimes(20);
 } */
 
 function showPrimes(limit) {
-    for (let i = 2; i <= limit; i++) {
-        if (isPrime(i)) console.log(i);
-    }
+  for (let i = 2; i <= limit; i++) {
+    if (isPrime(i)) console.log(i);
+  }
 }
 
 function isPrime(i) {
-    for (let j = 2; j <= i; j++) {
-        if (i % j === 0) return false;
-    }
-    return true;
+  for (let j = 2; j <= i; j++) {
+    if (i % j === 0) return false;
+  }
+  return true;
 }

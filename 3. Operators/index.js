@@ -1,5 +1,23 @@
+let x = 10;
+let y = 3;
+
+console.log("Addition: ", x + y);
+console.log("Subtraction: ", x - y);
+console.log("Multiplication: ", x * y);
+console.log("Division: ", x / y);
+console.log("Remainder: ", x % y);
+console.log("Exponential: ", x ** y);
+
+// Increment (++)
+console.log("First incremented then printed: ", ++x); // Will first increment and then print
+console.log("First printed then incremented: ", x++); // Will first print and then increment
+console.log("Incremented value: ", x); // Will be one greater than previous execution
+
+// Decrement (--)
+console.log("First decremented then printed: ", --x); // Will first decrement and then print
+
 // COMPARISON
-let x = 1;
+x = 1;
 
 // Relational
 console.log(x > 0); // Boolean, will return true
@@ -8,15 +26,15 @@ console.log(x < 1); // Boolean, will return false
 console.log(x <= 1); // Boolean, will return true
 
 // Equality
-console.log(x === 1); // Checks for equality, will return true 
+console.log(x === 1); // Checks for equality, will return true
 console.log(x !== 1); // Checks for inequality, will return false
 
-console.log(x === '1'); // Will return false
-console.log(x == '1'); // Will return true
+console.log(x === "1"); // Will return false
+console.log(x == "1"); // Will return true
 
 let points = 110;
-let type = points > 100 ? 'gold' : 'silver';
-console.log(type)
+let type = points > 100 ? "gold" : "silver";
+console.log(type);
 
 // LOGICAL AND (&&)
 console.log(true && false); // should return false
@@ -27,8 +45,7 @@ let eligibleForLoan = highIncome && goodCreditScore;
 console.log(eligibleForLoan);
 
 let eligibleForLoanOR = highIncome || goodCreditScore;
-console.log(eligibleForLoanOR)
-
+console.log(eligibleForLoanOR);
 
 let user_color = "red";
 let default_color = "blue";
@@ -52,15 +69,17 @@ const exec_permission = 1; // decimal representation of execute
 let my_permission = 0; // current permissions
 my_permission = my_permission | read_permission | write_permission;
 
-let message = (my_permission & exec_permission) ? 'execute permission granted' : 'no execute permission';
+let message =
+  my_permission & exec_permission
+    ? "execute permission granted"
+    : "no execute permission";
 
 console.log(message);
 
 x = 10;
-let y = x++;
+y = x++;
 console.log(y);
 console.log(x);
-
 
 // Exercise
 let a = "red";

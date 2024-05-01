@@ -85,3 +85,25 @@
 - Functions have inputs and inputs change how the function behaves
 - The function has parameters, while arguments are the actual values that we supply for the parameter
 - An application is 1000s of functions working together to provide the functionality of that application
+
+#### Types of Functions
+
+1. Function that calculates a value
+
+```javascript
+function square(number) {
+  return number * number;
+}
+
+console.log(square(2));
+```
+
+2. Performs a specific task
+
+```javascript
+function greet(first_name, last_name) {
+  console.log("Hello" + first_name + " " + last_name);
+}
+
+greet("John", "Doe");
+```

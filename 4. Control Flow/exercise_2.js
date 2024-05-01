@@ -3,7 +3,6 @@
 
 console.log(isLandScape(800, 600));
 
-
 function isLandScape(width, height) {
-    return width > height;
+  return width > height;
 }
